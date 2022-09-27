@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>CV Maker</title>
+</head>
+
+
+
+
+
+
+<!-- background image pure website k liye -->
+
+
+<head>
+    <style>
+    body {
+      background-image: url(./shollinganallur-sdb1.jpg);
+    }
+    </style>
+    </head>
+
+
+
+
+<!-- yaha tak -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+   <!-- html code start -->
+   <div class="card mx-5 mt-3" id="cv-form">
+    <div class="card-header">
+      <h1 style="background-color: orange" CLASS="text-center my-3">
+          <u>ONLINE CV BUILDER</u></h1>
+          <p style="background-color: green; font-size: 150%; color: white;font-family: fantasy;" 
+          class="text-center my-1"> by ADITYA SINGH
+          </p>
+        </div>
+        <div class="card-body">
+          <div class="container" >
+          
+            <div class="row">
+              <div class="col-md-6">
+        <!-- first colum -->
+        <h3 style="background-color: purple; color: whitesmoke;">Personal Information</h3>
+
+        <div class="form-group mt-4">
+            <label style="background-color: rgb(7, 7, 120); color: white" for="nameField">
+                <img src="name1logo.png" alt="" width="40" height="40">
+                Your Name</label>
+            <input type="text" id="nameField" 
+            placeholder="Enter here" 
+            class="form-control">
+        </div>
+
+        <div class="form-group mt-2">
+            <label style="background-color: rgb(7, 7, 120); color: white" for="contactField">
+                <img src="contact1logo.png" alt="" width="40" height="40">
+                Your Contact Number</label>
+            <input type="text" id="contactField" 
+            placeholder="Enter here" 
+            class="form-control">
+        </div>
+
+        <div class="form-group mt-2">
+            <label style="background-color: rgb(7, 7, 120); color: white" for="addressField">
+                <img src="address1logo.png" alt="" width="40" height="40">
+                 Your Address</label>
+            <textarea
+            rows="6"
+            id="addressField" placeholder="Enter here" 
+            class="form-control">
+           
+            </textarea>
+        </div>
+
+
+
+
+<!-- for adding dp in cv -->
+
+
+        <div class="form-group mt-3">
+            <label style="background-color: rgb(7, 7, 120); color: white" for="">
+                <img src="dplogo.png" alt="" width="40" height="40">
+                Select your photo</label>
+
+            <input id="imgField" type="file" class="form-control">
+        </div>
+
+        <!--important links -->
+
+        <p class="text-secondary my-3">IMPORTANT LINKS</p>
+
+        <div class="form-group mt-2">
+            <label for="fbField" style="background-color: rgb(66, 103, 178); color: white">
+                <img src="fblogo.png" alt="" width="40" height="40">  Facebook </label>
+            <input type="text" 
+            id="fbField" 
+            placeholder="Enter here" 
+            class="form-control">
+        </div>
+
+        <div class="form-group mt-2">
+            <label for="instaField" style="background-color:  rgb(96, 6, 99); color: white">
+                <img src="instagram.png" alt="" width="40" height="40"> Instagram</label>
+            <input type="text" 
+            id="instaField" 
+            placeholder="Enter here" 
+            class="form-control">
+        </div>
+
+        <div class="form-group mt-2">
+            <label for="linkedField" style="background-color:  rgb(0, 160, 220); color: white">
+                <img src="linkedin.png" alt="" width="40" height="40"> LinkedIn</label>
+            <input type="text" 
+            id="linkedField" 
+            placeholder="Enter here" 
+            class="form-control">
+        </div>
+    </div>
+
+    <div class="col-md-6 mt-5">
+
+
+
+
+        <!-- second colum-->
+
+
+        <h3 style="background-color: purple; color: whitesmoke;">Professional information</h3>
+
+        <div class="form-group mt-4">
+            <label for="" style="background-color: rgb(7, 7, 120); color: white">
+                <img src="objecctive.png" alt="" width="40" height="40">
+                Objective</label>
+            <textarea
+            id="objectiveField"
+            rows="4"
+            placeholder="Enter here" 
+            class="form-control">
+        </textarea>
+        </div>
+
+
+        <div class="form-group mt-2" id="we">
+            <label for="" style="background-color: rgb(7, 7, 120); color: white">
+                <img src="workexperience.png" alt="" width="40" height="40">
+                Work Experience</label>
+            <textarea
+            rows="3"
+            placeholder="Enter here" 
+            class="form-control weField">
+        </textarea>
+
+        <!-- new text area-->
+        <div class="container text-center mt-2" id="weAddButton">
+            <button style="background-color: red; color:azure"
+              onclick="addNewWEField()"
+              class="btn btn-primary btn-sm"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+
+
+        <div class="form-group mt-2" id="aq">
+            <label for="" style="background-color: rgb(7, 7, 120); color: white">
+                <img src="accademic1logo.png" alt="" width="40" height="40">
+                Academic Qualification</label>
+            <textarea
+            rows="2"
+             placeholder="Enter here" 
+            class="form-control eqField">
+        </textarea>
+
+
+        <div class="container text-center mt-2" id="aqAddButton">
+            <button onclick="addNewAQField()" class="btn btn-dark btn-sm" 
+            style="background-color: red; color:azure">Add</button>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- final button is below here submit & reset-->
+
+<div class="container text-center mt-3">
+    <button style="background-color: orange; font-weight: bold;" onclick="generateCV()" class="btn btn-primary btn-lg">
+      Generate CV
+    </button>
+    <button onclick="window.location.reload()" class="resetbutton">Reset</button>
+  </div>
+</div>
+</div class="card-body">
+</div>
+
+
+
+
+<!-- cv templete-->
+
+<div class="container" id="cv-template">
+
+    <div class="row"> 
+
+        <!--this is fiest colum-->
+        <div class="col-md-4 text-center py-5 background">
+        <img src="D:\CV\dp.jpeg" alt="" 
+        class="img-fluid myimg"
+        id="imgTemplate"
+        />
+
+        <div class="conainer">
+
+           
+
+            <p class="adityacv1" style="background-color: orange; text-decoration-color: aqua; text-shadow: 1cm ;font-weight: 1000;" id="nameT1">
+                <img src="name.png" alt="" width="50" height="50" >
+                 Aditya singh</p>
+            <p class="adityacv1" style="background-color: white; font-weight: 800;" id="contactT">
+                <img src="contactlogo.png" alt="" width="50" height="50" >
+                +916203904079, 8340696930</p>
+            <p class="adityacv1" style="background-color: green; font-weight: 800;" id="addressT">
+                <img src="addresslogo.png" alt="" width="50" height="50" >
+                <br>Rajendra Nagar 
+               <br> Arrah, Bhojpur
+              <br>  Bihar-802301
+            </p>
+
+            <hr> </h>
+            <p class="adityacv1" style="background-color: white; color: whitesmoke;">
+                <img src="fblogo.png" alt="" width="50" height="50" >
+                <a id="fbT" href="#1">https://www.facebook.com/mr.babuaan1/</a>
+            </p>
+
+            <p class="adityacv1" style="background-color: white; color: whitesmoke;">
+                <img src="instagram.png" alt="" width="50" height="50" >
+                <a id="instaT" href="#2">https://www.instagram.com/royal_babuaan2/</a>
+            </p>
+            <p class="adityacv1" style="background-color: white; color: whitesmoke;">
+                <img src="linkedin.png" alt="" width="50" height="50" >
+                <a id="linkedT" href="#3">https://www.linkedin.com/in/aditya-singh-973b0b19b/</a>
+            </p>
+
+        </div>
+        </div>
+        
+
+        <!-- this is second colum-->
+        <div class="col-md-8 py-5">
+            <h1 id="nameT2" class="text-center" 
+            style="font-weight: 980; background-color: wheat;">
+
+            ADITYA SINGH
+
+        </h1>
+
+        <!-- objective card -->
+
+        <div class="card mt-4">
+            <div class="card-header background">
+                <h4 style="font-size: x-large; background-color: orange">
+                    <img src="objecctive.png" alt="" width="50" height="50" >
+                    
+
+                    Objective
+
+                </h4>
+            </div>
+
+            
+            <div class="card-body">
+                <p class="adi" id="objectiveT"> 
+                
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Molestiae doloribus officiis quod pariatur facere quisquam deserunt illo perspiciatis. 
+                    Voluptate, velit. Fuga necessitatibus blanditiis cumque temporibus 
+                    velit labore quos impedit numquam explicabo esse dolores, aut 
+                    suscipit eum possimus aperiam. Exercitationem in vero id numquam ipsum fuga deserunt? 
+                    Quos, sit. Libero, doloremque.
+                </p>
+            </div>
+        </div>
+
+        <!-- work Experience card -->
+
+
+
+        <div class="card mt-4">
+            <div class="card-header background">
+                <h4 style="font-size: x-large; background-color: white">
+                    <img src="workexperience.png" alt="" width="50" height="50" >
+                    Work Experience
+                </h4>
+            </div>
+
+            
+            <div class="card-body">
+               
+                <ul class="adi" id="weT">
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+                    <li>Minima quidem deleniti odit fuga atque, culpa temporibus esse porro. </li>
+                    <li>Sed adipisci pariatur temporibus, delectus impedit repudiandae aliquid fugit ex dicta doloremque?</li>
+                </ul>
+            </div>
+        </div>
+       
+
+        <!-- academic Qualification card -->
+
+
+        <div class="card mt-4">
+            <div class="card-header background">
+                <h4 style="font-size: x-large; background-color: green">
+                    <img src="accademiclogo.png" alt="" width="50" height="50" >
+
+                   Academic Qualification
+
+                </h4>
+            </div>
+
+            
+            <div class="card-body">
+               
+                <ul class="adi" id="aqT">
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+                    <li>Minima quidem deleniti odit fuga atque, culpa temporibus esse porro. </li>
+                    <li>Sed adipisci pariatur temporibus, delectus impedit repudiandae aliquid fugit ex dicta doloremque?</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- final print button -->
+
+
+        <div class="container mt-3 text-center">
+            <button style="font-weight: 980; background-color:red";  onclick="printCV()" class="btn background">Print CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
