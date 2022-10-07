@@ -92,4 +92,17 @@ body {
  }
  /* yaha tak */
 
+
+ .btnbackground{
+  padding: 15px;
+  background-color: black;
+  margin-left: 15px;
+  color: white;
+  border: 2px solid yellow;
+ border-radius: 10px ;
+}
+.btnbackground:hover{
+  background-color: blue;
+  color: white;
+}
  
